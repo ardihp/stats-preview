@@ -1,0 +1,114 @@
+/* font-family: 'Lexend Deca', sans-serif;
+font-family: 'Inter', sans-serif; */
+
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+body{
+    background: hsl(233, 47%, 7%);
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    height: auto;
+    width: 70%;
+    background: hsl(244, 38%, 16%);
+    margin: 100px auto;
+    border-radius: 10px;
+}
+
+.content{
+    padding: 30px;
+    width: 50%;
+}
+
+.content h3{
+    font-weight: 700;
+    font-size: 30px;
+    margin: 10px 20px;
+}
+
+.content span{
+    color: hsl(277, 64%, 61%);
+}
+
+.content p{
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 30px 20px;
+    width: 80%;
+}
+
+.point{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.point .title{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.title span{
+    font-size: 11px;
+    color: hsla(0, 0%, 100%, 0.493);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.img{
+    background: linear-gradient(hsla(277, 64%, 61%, .4), hsl(277, 64%, 61%, .4)), url('images/image-header-desktop.jpg');
+    background-size: cover;
+    width: 60%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.mobile{
+    display: none;
+}
+
+
+@media screen and (max-width: 850px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 50px auto;
+    }
+
+    .content{
+        width: 80%;
+        text-align: center;
+    }
+
+    .img{
+        background: linear-gradient(hsla(277, 64%, 61%, .4), hsl(277, 64%, 61%, .4)), url('images/image-header-mobile.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 10px;
+    }
+
+    .content p{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .point{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .point .title{
+        margin: 15px auto;
+    }
+}
